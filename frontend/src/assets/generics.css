@@ -1,0 +1,293 @@
+html {
+    --scrollbarBG: #f1675850;
+    --thumbBG: #f16758;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+/*Animations*/
+
+.animation {
+    transition: ease-in-out;
+    transition-duration: 250ms;
+}
+
+/*Style*/
+#app {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.bg-main {
+    background-color: #f16758;
+}
+
+.text-main,
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year:enabled:hover,
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month:enabled:hover {
+    color: #f16758;
+}
+
+.min-height-full {
+    min-height: 100%;
+}
+
+.btn-main,
+.p-confirm-dialog-accept,
+.p-radiobutton .p-radiobutton-box.p-highlight {
+    background-color: #f16758;
+    border-color: #f16758;
+}
+
+.btn-main.p-button:focus,
+.p-confirm-dialog-accept.p-button:focus,
+.p-confirm-dialog-reject.p-button:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #f16758, 0 1px 2px 0 black;
+}
+
+.p-confirm-dialog-reject,
+.p-datepicker table td>span.p-highlight,
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):focus {
+    background-color: hwb(6 35% 5% / 0.05);
+    border-color: hwb(6 35% 5% / 0.2);
+    color: #f16758;
+}
+
+.p-datepicker table td>span.p-highlight,
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):focus,
+.p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+    box-shadow: 0 0 0 0.2rem #f1675821;
+
+}
+
+.btn-main.p-button .p-button-label {
+    font-weight: 400;
+}
+
+
+.input-style .p-inputtext:enabled:hover,
+.input-style:hover,
+.p-radiobutton .p-radiobutton-box:not(.p-disabled):not(.p-highlight):hover {
+    border-color: #f16758;
+}
+
+.input-style .p-inputtext:enabled:focus,
+.input-style:focus,
+.p-calendar:not(.p-calendar-disabled).p-focus>.p-inputtext {
+    box-shadow: 0 0 0 0.2rem #f1675821;
+    border-color: #f16758;
+}
+
+.p-fileupload .photo-upload {
+    width: 100%;
+    background-color: transparent !important;
+    color: #f16758;
+}
+
+.p-fileupload .photo-upload:hover {
+    background-color: #f16758 !important;
+    color: #ffffff;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.stats-card-container .p-card-body {
+    text-align: center;
+}
+
+.stats-card-container .p-card-content {
+    padding-bottom: 0;
+    padding-top: 12px;
+}
+
+.stats-card-container .p-card-content p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.p-tooltip .p-tooltip-arrow {
+    border-top-color: #f16758;
+}
+
+.p-tooltip .p-tooltip-text {
+    background-color: #F5F5F5;
+    border: 1px solid #f1675869;
+    color: #f16758;
+    text-align: center;
+}
+
+.input-style-error .p-inputtext,
+.input-style-error.p-inputtext {
+    border-color: rgba(255, 0, 0, 0.80);
+}
+
+.admin-dashboard-list-container .p-tabview .p-tabview-nav-container .p-tabview-nav .p-datatable .p-sortable-column.p-highlight {
+    background-color: #f1675869;
+}
+
+.p-datatable .p-sortable-column.p-highlight:hover,
+.p-datatable .p-sortable-column.p-highlight {
+    background-color: rgba(241, 103, 88, 0.13);
+    color: #f16758;
+}
+
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: #f16758;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    color: #f16758;
+    background-color: #f1675810;
+}
+
+.p-dropdown:not(.p-disabled):hover,
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+    border-color: #f16758;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: 0 0 0 0.2rem #f1675827;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #f16758;
+    background-color: #f16758;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    box-shadow: 0 0 0 0.2rem #f1675831;
+}
+
+.p-checkbox-box {
+    border: 2px solid #d1d5db;
+}
+
+.p-dropdown {
+    border: 1px solid #d1d5db;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border-color: #f16758;
+    color: #f16758;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: #f1675810;
+    color: #f16758;
+    border-color: #f1675810;
+}
+
+.p-progress-spinner-circle{
+    animation: none;
+}
+
+.loading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.p-inputswitch .p-inputswitch-slider {
+    background: #f16758b6;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 30px;
+}
+
+.p-inputswitch:not(.p-disabled):hover .p-inputswitch-slider {
+    background: #f16758;
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: #f16758;
+}
+
+.p-button.p-button-outlined {
+    border: 1px solid #f16758;
+    color: #f16758;
+}
+
+.p-button:focus {
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #f16758, 0 1px 2px 0 black;
+}
+
+.p-accordion .p-accordion-header.transaction-positive .p-accordion-header-link{
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+.p-accordion .p-accordion-header.transaction-negative .p-accordion-header-link{
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.receive-money-toast.p-toast .p-toast-message.p-toast-message-success{
+    background-color: hsla(6, 85%, 65%, 0.2);
+    border: solid #f16758;
+    border-width: 0 0 0 6px;
+    color: #f16758;
+}
+
+.receive-money-toast.p-toast .p-toast-message.p-toast-message-success .p-toast-icon-close{
+    color: #f16758;
+}
+
+.receive-money-options .p-button-text{
+    color: #f16758;
+}
+
+.receive-money-options .p-button.p-button-text:enabled:active, .receive-money-options v.p-button.p-button-text:enabled:hover{
+    background-color: hsla(6, 85%, 65%, 0.2);
+}
+
+.p-dialog-header-close:active, .p-inputswitch.p-focus .p-inputswitch-slider, .p-sidebar-close:active, .p-sidebar-close:active:focus{
+    box-shadow: 0 0 0 0.2rem #f1675831;
+}
+
+.statistics-tabs-container .p-tabview-panels .p-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-height: 36rem;
+}
